@@ -174,10 +174,12 @@
 
     <form name="get-help" method="POST" data-netlify="true" netlify>
       <label>Your name (optional)</label>
-      <input type="text" name="Name" placeholder="Enter your name">
+<input type="text" name="name" placeholder="Enter your name">
 
-      <label>What do you need help with?</label>
+<label>Email for reply</label>
+<input type="email" name="email" placeholder="Enter your email" required>
 
+<label>What do you need help with?</label>
       <select name="Category" required>
         <option value="">Choose a category</option>
         <option>Phone Help</option>
