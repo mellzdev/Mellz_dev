@@ -1,142 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mell Tech Solutions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mell Tech Solutions</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
-            color: #222;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #222;
+    }
 
-        header {
-            background: #111827;
-            color: white;
-            padding: 25px 20px;
-            text-align: center;
-        }
+    header {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-        }
+    nav {
+      background: #1f2937;
+      text-align: center;
+      padding: 15px;
+    }
 
-        header p {
-            margin-top: 8px;
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
 
-        nav {
-            background: #1f2937;
-            padding: 12px;
-            text-align: center;
-        }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+    .hero h1 {
+      font-size: 32px;
+    }
 
-        .hero {
-            padding: 50px 20px;
-            text-align: center;
-        }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
 
-        .hero h2 {
-            font-size: 30px;
-        }
+    .card {
+      background: white;
+      width: 250px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
 
-        .hero p {
-            font-size: 18px;
-        }
+    .get-help {
+      background: white;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
 
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
+    .get-help h2 {
+      text-align: center;
+    }
 
-        .card {
-            background: white;
-            width: 280px;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0 15px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 7px;
+    }
 
-        .card h3 {
-            margin-top: 0;
-        }
+    textarea {
+      height: 120px;
+      resize: vertical;
+    }
 
-        footer {
-            margin-top: 40px;
-            padding: 20px;
-            text-align: center;
-            background: #111827;
-            color: white;
-        }
-    </style>
+    button {
+      width: 100%;
+      padding: 13px;
+      background: #111827;
+      color: white;
+      border: none;
+      border-radius: 7px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #374151;
+    }
+
+    .note {
+      font-size: 13px;
+      color: #666;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Mell Tech Solutions</h1>
+  <header>
+    <h1>Mell Tech Solutions 💻</h1>
     <p>Simple technology help for everyone.</p>
-</header>
+  </header>
 
-<nav>
-    <a href="#">Home</a>
+  <nav>
+    <a href="#home">Home</a>
     <a href="#services">Services</a>
+    <a href="#help">Get Help</a>
     <a href="#about">About</a>
-</nav>
+  </nav>
 
-<section class="hero">
-    <h2>Welcome to Mell Tech Solutions 💻</h2>
-    <p>Helping you understand phones, computers, apps and technology.</p>
-</section>
+  <section class="hero" id="home">
+    <h1>Welcome to Mell Tech Solutions</h1>
+    <p>Need help with your phone, computer, internet or coding?</p>
+    <p>You're in the right place.</p>
+  </section>
 
-<section class="cards" id="services">
+  <section id="services">
+    <h2 style="text-align:center;">What We Help With</h2>
 
-    <div class="card">
+    <div class="cards">
+
+      <div class="card">
         <h3>📱 Phone Help</h3>
-        <p>Learn how to solve common phone problems and discover useful settings.</p>
-    </div>
+        <p>Learn how to solve common phone problems and settings.</p>
+      </div>
 
-    <div class="card">
+      <div class="card">
         <h3>💻 Computer Help</h3>
-        <p>Beginner-friendly computer guides, tips and useful tricks.</p>
-    </div>
+        <p>Get simple guides for computers and common problems.</p>
+      </div>
 
-    <div class="card">
+      <div class="card">
         <h3>🌐 Internet Help</h3>
-        <p>Learn about Wi-Fi, mobile data, connections and common internet problems.</p>
+        <p>Learn about Wi-Fi, mobile data and internet problems.</p>
+      </div>
+
+      <div class="card">
+        <h3>👨‍💻 Coding</h3>
+        <p>Learn basic coding and how to build websites.</p>
+      </div>
+
     </div>
+  </section>
 
-    <div class="card">
-        <h3>🧑‍💻 Coding</h3>
-        <p>Learn the basics of creating websites and becoming a developer.</p>
-    </div>
+  <section class="get-help" id="help">
 
-</section>
+    <h2>🆘 Get Help</h2>
 
-<section class="hero" id="about">
-    <h2>About Mell Tech Solutions</h2>
-    <p>
-        Mell Tech Solutions is a technology website created to make
-        technology easier to understand.
+    <p style="text-align:center;">
+      Have a technology problem? Tell us what you need help with.
     </p>
-</section>
 
-<footer>
-    <p>© 2026 Mell Tech Solutions. All rights reserved.</p>
-</footer>
+    <form action="mailto:YOUR-EMAIL@example.com" method="post" enctype="text/plain">
+
+      <label>Your name (optional)</label>
+      <input type="text" name="Name" placeholder="Enter your name">
+
+      <label>What do you need help with?</label>
+
+      <select name="Category" required>
+        <option value="">Choose a category</option>
+        <option>Phone Help</option>
+        <option>Computer Help</option>
+        <option>Internet Help</option>
+        <option>Coding</option>
+        <option>Other</option>
+      </select>
+
+      <label>Your question</label>
+
+      <textarea
+        name="Question"
+        placeholder="Describe your problem..."
+        required></textarea>
+
+      <p class="note">
+        Please don't share passwords, PINs, banking details, or other private information.
+      </p>
+
+      <button type="submit">Send My Question</button>
+
+    </form>
+
+  </section>
+
+  <section id="about" class="hero">
+    <h2>About Mell Tech Solutions</h2>
+
+    <p>
+      Mell Tech Solutions provides simple technology tips,
+      phone help, computer guides, internet solutions and
+      beginner-friendly coding information.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Mell Tech Solutions</p>
+    <p>Technology made simple. 💻</p>
+  </footer>
 
 </body>
 </html>
